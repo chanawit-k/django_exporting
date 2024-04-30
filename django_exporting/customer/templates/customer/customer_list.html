@@ -1,7 +1,16 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block body %}
-<table class="table">
+<div class="d-flex flex-column bd-highlight gap-3">
+  <div class="d-flex justify-content-end">
+    <div class="gap-3" data-toggle="buttons">
+      <button type="button" class="btn btn-dark"><a class="text-white text-decoration-none" href="#" id="option1">CSV</a></button>
+      <button type="button" class="btn btn-dark"><a class="text-white text-decoration-none" href="#" id="option1">JSON</a></button>
+      <button type="button" class="btn btn-dark"><a class="text-white text-decoration-none" href="#" id="option1">PDF</a></button>
+    </div>
+  </div>
+ 
+  <table class="table border border-success">
     <thead>
       <tr>
         <th scope="col">#</th>
@@ -30,4 +39,6 @@
       </tr>
     </tbody>
   </table>
+</div>
+
 {% endblock body %}
