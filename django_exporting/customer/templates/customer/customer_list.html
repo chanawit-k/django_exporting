@@ -14,29 +14,24 @@
     <thead>
       <tr>
         <th scope="col">#</th>
-        <th scope="col">First</th>
-        <th scope="col">Last</th>
-        <th scope="col">Handle</th>
+        <th scope="col">Company Name</th>
+        <th scope="col">Contact Name</th>
+        <th scope="col">Contact Title</th>
+        <th scope="col">City</th>
+        <th scope="col">Region</th>
       </tr>
     </thead>
     <tbody>
+      {% for customer in customer_list%}
       <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
+        <th scope="row">{{ forloop.counter }}</th>
+        <td>{{customer.companyname}}</td>
+        <td>{{customer.contactname}}</td>
+        <td>{{customer.contacttitle}}</td>
+        <td>{{customer.city}}</td>
+        <td>{{customer.region}}</td>
       </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td>@fat</td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td colspan="2">Larry the Bird</td>
-        <td>@twitter</td>
-      </tr>
+      {% endfor %}
     </tbody>
   </table>
 </div>

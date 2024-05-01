@@ -7,4 +7,5 @@ app_name = 'customer'
 
 urlpatterns = [
     path('', views.CustomerListView.as_view(), name='customer_list'),
+    path('csv', views.DataExportView.as_view(), name='customer_export_csv'),
 ]
