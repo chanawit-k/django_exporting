@@ -5,5 +5,5 @@ Using :  [Django csv Export View](https://pypi.org/project/django-csv-export-vie
 
 
 ## 2. Export PDF
-[How to use]([https://pypi.org/project/django-csv-export-view/](https://www.letscodemore.com/blog/convert-html-to-pdf-in-django-and-python-using-wkhtmltopdf/)
+Using wkhtmltopdf and pdfkit [Refference](https://www.letscodemore.com/blog/convert-html-to-pdf-in-django-and-python-using-wkhtmltopdf/)
 
